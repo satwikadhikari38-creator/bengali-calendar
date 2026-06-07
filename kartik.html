@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>কার্তিক ১৪৩৩</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="boishakh.html">বৈশাখ</a>
+        <a href="joishtho.html">জ্যৈষ্ঠ</a>
+        <a href="index.html">আষাঢ়</a>
+        <a href="shrabon.html">শ্রাবণ</a>
+        <a href="bhadro.html">ভাদ্র</a>
+        <a href="ashwin.html">আশ্বিন</a>
+        <a href="kartik.html">কার্তিক</a>
+        <a href="ograhayon.html">অগ্রহায়ণ</a>
+        <a href="poush.html">পৌষ</a>
+        <a href="magh.html">মাঘ</a>
+        <a href="falgun.html">ফাল্গুন</a>
+        <a href="choitro.html">চৈত্র</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+
+        <h1>কার্তিক ১৪৩৩</h1>
+        <h2>October / November 2026</h2>
+
+        <!-- Weekdays -->
+        <div class="weekdays">
+            <div>রবি</div>
+            <div>সোম</div>
+            <div>মঙ্গল</div>
+            <div>বুধ</div>
+            <div>বৃহঃ</div>
+            <div>শুক্র</div>
+            <div>শনি</div>
+        </div>
+
+        <!-- Month Navigation -->
+        <div style="margin:20px;">
+            <button onclick="location.href='ashwin.html'">
+                ◀ Previous Month
+            </button>
+
+            <button onclick="location.href='ograhayon.html'">
+                Next Month ▶
+            </button>
+        </div>
+
+        <!-- Today Info -->
+        <div id="todayInfo"></div>
+
+        <br>
+
+        <!-- Holiday Box -->
+        <h3>Upcoming Holidays</h3>
+        <div id="holidayBox"></div>
+
+        <br>
+
+        <!-- Calendar -->
+        <div class="calendar" id="calendar"></div>
+
+        <br><br>
+
+        <h2>Book Date</h2>
+
+        <p>
+            Selected Date:
+            <span id="selectedDate">None</span>
+        </p>
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Enter Name">
+
+        <br><br>
+
+        <input
+            type="text"
+            id="purpose"
+            placeholder="Enter Purpose">
+
+        <br><br>
+
+        <button onclick="bookDate()">
+            Book
+        </button>
+
+        <br><br>
+
+        <!-- Search -->
+        <input
+            type="text"
+            id="searchName"
+            placeholder="Search Name">
+
+        <button onclick="searchBooking()">
+            Search
+        </button>
+
+        <br><br>
+
+        <!-- Booking Controls -->
+        <button onclick="showBookings()">
+            Show Bookings
+        </button>
+
+        <button onclick="deleteAllBookings()">
+            Delete All Bookings
+        </button>
+
+        <br><br>
+
+        <button onclick="editBooking()">
+            Edit Booking
+        </button>
+
+        <button onclick="exportBookings()">
+            Export Bookings
+        </button>
+
+        <br><br>
+
+        <!-- Import -->
+        <input
+            type="file"
+            id="importFile">
+
+        <button onclick="importBookings()">
+            Import Bookings
+        </button>
+
+    </div>
+
+</div>
+
+<script src="kartik.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
